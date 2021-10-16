@@ -1,24 +1,24 @@
-import React from "react"; 
-import TableRow from '@mui/material/TableRow';
-import TableCell from '@mui/material/TableCell';
+import React from "react";
+import TableRow from "@mui/material/TableRow";
+import TableCell from "@mui/material/TableCell";
 
-
-function Customer (props){
-    return (
-        <TableRow>
-            <TableCell>{props.id}</TableCell>
-            <TableCell><img src={props.image} alt="profile" /></TableCell>
-            <TableCell>{props.name}</TableCell>
-            <TableCell>{props.birth}</TableCell>
-            <TableCell>{props.gender}</TableCell>
-            <TableCell>{props.job}</TableCell>
-        </TableRow>
-        // <div>
-        //     <CustomerProfile id={props.id} image ={props.image} name={props.name}/>
-        //     <CustomerInfo birth={props.birth} gender ={props.gender} job ={props.job}/>
-        // </div> 
-        
-    ); 
+function Customer(props) {
+  return (
+    <TableRow>
+      <TableCell>{props.id}</TableCell>
+      <TableCell>
+        <img src={props.image} alt='profile' />
+      </TableCell>
+      <TableCell>{props.name}</TableCell>
+      <TableCell>{props.birth}</TableCell>
+      <TableCell>{props.gender}</TableCell>
+      <TableCell>{props.job}</TableCell>
+    </TableRow>
+    // <div>
+    //     <CustomerProfile id={props.id} image ={props.image} name={props.name}/>
+    //     <CustomerInfo birth={props.birth} gender ={props.gender} job ={props.job}/>
+    // </div>
+  );
 }
 
 // function CustomerProfile (props) {
@@ -26,7 +26,7 @@ function Customer (props){
 //       <div>
 //           <img src={props['image']} alt="profile" />
 //           <h2>{props['name']}({props['id']})</h2>
-//       </div>  
+//       </div>
 //     );
 // }
 
@@ -39,7 +39,5 @@ function Customer (props){
 //         </div>
 //     )
 // }
- 
-
 
 export default Customer;
