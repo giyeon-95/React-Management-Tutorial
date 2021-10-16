@@ -69,8 +69,8 @@ function App() {
                 console.log(e);
                 return (
                   <Customer // map 을 사용하면 key값은 지정 해주셔야 합니다.
-                    key={e.id}
-                    id={e.id}
+                    key={e._id}
+                    id={e._id}
                     image={e.image}
                     name={e.name}
                     birth={e.birth}
